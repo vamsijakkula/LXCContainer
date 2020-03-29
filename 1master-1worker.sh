@@ -8,6 +8,14 @@ lxc profile show k8s
 lxc profile edit k8s # Use the configuration with quota and limits
 lxc list
 
+sudo systemctl status lxd
+
+getent group lxd
+sudo gpasswd -a qvamjak lxd
+newgrp lxd
+groups
+
+
 
 
 lxc launch images:centos/7 kmaster --profile k8s
