@@ -26,7 +26,7 @@ EOF
 
 # Install Kubernetes
 echo "[TASK 4] Install Kubernetes (kubeadm, kubelet and kubectl)"
-yum install -y -q kubeadm-1.17.1 kubelet-1.17.1 kubectl-1.17.1 >/dev/null 2>&1
+yum install -y -q kubeadm-1.18.4 kubelet-1.18.4 kubectl-1.18.4 >/dev/null 2>&1
 
 # Start and Enable kubelet service
 echo "[TASK 5] Enable and start kubelet service"
